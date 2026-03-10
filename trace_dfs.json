@@ -1,0 +1,462 @@
+[
+  {
+    "action": "init_code",
+    "lines": [
+      "def dfs(node):",
+      "    visited.add(node)",
+      "    for neighbor in adj[node]:",
+      "        if neighbor not in visited:",
+      "            dfs(neighbor)"
+    ]
+  },
+  {
+    "action": "init_graph",
+    "nodes": {
+      "A": {
+        "x": 300,
+        "y": 50
+      },
+      "B": {
+        "x": 150,
+        "y": 150
+      },
+      "C": {
+        "x": 450,
+        "y": 150
+      },
+      "D": {
+        "x": 100,
+        "y": 280
+      },
+      "E": {
+        "x": 200,
+        "y": 280
+      }
+    },
+    "edges": {
+      "A": [
+        "B",
+        "C"
+      ],
+      "B": [
+        "D",
+        "E"
+      ],
+      "C": [],
+      "D": [],
+      "E": []
+    }
+  },
+  {
+    "action": "log",
+    "text": "Starting DFS from node A"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 1
+  },
+  {
+    "action": "set_node_color",
+    "id": "A",
+    "color": "var(--node-active)"
+  },
+  {
+    "action": "set_node_active",
+    "id": "A",
+    "active": true
+  },
+  {
+    "action": "log",
+    "text": "Visiting: A"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 2
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 3
+  },
+  {
+    "action": "log",
+    "text": "Checking neighbor B of A"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 4
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 1
+  },
+  {
+    "action": "set_node_color",
+    "id": "B",
+    "color": "var(--node-active)"
+  },
+  {
+    "action": "set_node_active",
+    "id": "B",
+    "active": true
+  },
+  {
+    "action": "log",
+    "text": "Visiting: B"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 2
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 3
+  },
+  {
+    "action": "log",
+    "text": "Checking neighbor D of B"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 4
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 1
+  },
+  {
+    "action": "set_node_color",
+    "id": "D",
+    "color": "var(--node-active)"
+  },
+  {
+    "action": "set_node_active",
+    "id": "D",
+    "active": true
+  },
+  {
+    "action": "log",
+    "text": "Visiting: D"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 2
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_node_color",
+    "id": "D",
+    "color": "var(--node-visited)"
+  },
+  {
+    "action": "set_node_active",
+    "id": "D",
+    "active": false
+  },
+  {
+    "action": "log",
+    "text": "Finished: D"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_node_color",
+    "id": "B",
+    "color": "var(--node-active)"
+  },
+  {
+    "action": "set_node_active",
+    "id": "B",
+    "active": true
+  },
+  {
+    "action": "log",
+    "text": "Back at B"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 3
+  },
+  {
+    "action": "log",
+    "text": "Checking neighbor E of B"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 4
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 1
+  },
+  {
+    "action": "set_node_color",
+    "id": "E",
+    "color": "var(--node-active)"
+  },
+  {
+    "action": "set_node_active",
+    "id": "E",
+    "active": true
+  },
+  {
+    "action": "log",
+    "text": "Visiting: E"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 2
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_node_color",
+    "id": "E",
+    "color": "var(--node-visited)"
+  },
+  {
+    "action": "set_node_active",
+    "id": "E",
+    "active": false
+  },
+  {
+    "action": "log",
+    "text": "Finished: E"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_node_color",
+    "id": "B",
+    "color": "var(--node-active)"
+  },
+  {
+    "action": "set_node_active",
+    "id": "B",
+    "active": true
+  },
+  {
+    "action": "log",
+    "text": "Back at B"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_node_color",
+    "id": "B",
+    "color": "var(--node-visited)"
+  },
+  {
+    "action": "set_node_active",
+    "id": "B",
+    "active": false
+  },
+  {
+    "action": "log",
+    "text": "Finished: B"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_node_color",
+    "id": "A",
+    "color": "var(--node-active)"
+  },
+  {
+    "action": "set_node_active",
+    "id": "A",
+    "active": true
+  },
+  {
+    "action": "log",
+    "text": "Back at A"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 3
+  },
+  {
+    "action": "log",
+    "text": "Checking neighbor C of A"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 4
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 1
+  },
+  {
+    "action": "set_node_color",
+    "id": "C",
+    "color": "var(--node-active)"
+  },
+  {
+    "action": "set_node_active",
+    "id": "C",
+    "active": true
+  },
+  {
+    "action": "log",
+    "text": "Visiting: C"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 2
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_node_color",
+    "id": "C",
+    "color": "var(--node-visited)"
+  },
+  {
+    "action": "set_node_active",
+    "id": "C",
+    "active": false
+  },
+  {
+    "action": "log",
+    "text": "Finished: C"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_node_color",
+    "id": "A",
+    "color": "var(--node-active)"
+  },
+  {
+    "action": "set_node_active",
+    "id": "A",
+    "active": true
+  },
+  {
+    "action": "log",
+    "text": "Back at A"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_node_color",
+    "id": "A",
+    "color": "var(--node-visited)"
+  },
+  {
+    "action": "set_node_active",
+    "id": "A",
+    "active": false
+  },
+  {
+    "action": "log",
+    "text": "Finished: A"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 1
+  },
+  {
+    "action": "log",
+    "text": "DFS complete."
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  }
+]

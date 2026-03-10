@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Algorithm Visualizer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="toolbar">
+    <div class="toolbar-brand">
+      <span class="brand-dot"></span>
+      <span class="brand-name">AlgoViz</span>
+    </div>
+    <label class="file-label">
+      <input type="file" id="file-input" accept=".json">
+      <span class="file-btn">Load Trace</span>
+      <span class="file-name" id="file-name">no file selected</span>
+    </label>
+    <div class="toolbar-controls">
+      <button id="btn-play" class="btn btn-primary">▶ Play</button>
+      <button id="btn-pause" class="btn">⏸ Pause</button>
+      <button id="btn-next" class="btn">⏭ Step</button>
+      <button id="btn-reset" class="btn">↺ Reset</button>
+      <div class="speed-control">
+        <span class="speed-text">Speed</span>
+        <input type="range" id="speed-slider" class="speed-slider" min="1" max="7" step="1" value="3">
+        <span class="speed-label" id="speed-label">1×</span>
+      </div>
+    </div>
+    <div class="progress-wrap">
+      <div class="progress-bar" id="progress-bar"></div>
+    </div>
+  </div>
+
+  <div class="layout">
+    <div class="scene" id="visualizer"></div>
+    <div class="code-panel">
+      <pre class="code-body"><code id="code-block"></code></pre>
+    </div>
+  </div>
+
+  <div class="log-panel" id="log-panel">
+    <span class="log-placeholder">Load a trace file to begin...</span>
+  </div>
+
+  <script src="js/renderer.js"></script>
+  <script src="js/player.js"></script>
+</body>
+</html>

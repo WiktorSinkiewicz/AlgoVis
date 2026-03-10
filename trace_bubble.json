@@ -1,0 +1,941 @@
+[
+  {
+    "action": "init_code",
+    "lines": [
+      "def bubble_sort(arr):",
+      "    for i in range(len(arr)):",
+      "        for j in range(len(arr) - i - 1):",
+      "            if arr[j] > arr[j+1]:",
+      "                swap(arr, j, j+1)"
+    ]
+  },
+  {
+    "action": "init_array",
+    "data": [
+      45,
+      12,
+      35,
+      8,
+      50,
+      22
+    ]
+  },
+  {
+    "action": "log",
+    "text": "Starting bubble sort on [45, 12, 35, 8, 50, 22]"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 2
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 3
+  },
+  {
+    "action": "set_bar_color",
+    "index": 0,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "set_bar_color",
+    "index": 1,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "log",
+    "text": "Comparing arr[0]=45 and arr[1]=12"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 4
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 5
+  },
+  {
+    "action": "log",
+    "text": "Swapping  →  arr[0]=12, arr[1]=45"
+  },
+  {
+    "action": "swap",
+    "index1": 0,
+    "index2": 1
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 0,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "set_bar_color",
+    "index": 1,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 3
+  },
+  {
+    "action": "set_bar_color",
+    "index": 1,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "set_bar_color",
+    "index": 2,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "log",
+    "text": "Comparing arr[1]=45 and arr[2]=35"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 4
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 5
+  },
+  {
+    "action": "log",
+    "text": "Swapping  →  arr[1]=35, arr[2]=45"
+  },
+  {
+    "action": "swap",
+    "index1": 1,
+    "index2": 2
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 1,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "set_bar_color",
+    "index": 2,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 3
+  },
+  {
+    "action": "set_bar_color",
+    "index": 2,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "set_bar_color",
+    "index": 3,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "log",
+    "text": "Comparing arr[2]=45 and arr[3]=8"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 4
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 5
+  },
+  {
+    "action": "log",
+    "text": "Swapping  →  arr[2]=8, arr[3]=45"
+  },
+  {
+    "action": "swap",
+    "index1": 2,
+    "index2": 3
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 2,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "set_bar_color",
+    "index": 3,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 3
+  },
+  {
+    "action": "set_bar_color",
+    "index": 3,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "set_bar_color",
+    "index": 4,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "log",
+    "text": "Comparing arr[3]=45 and arr[4]=50"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 4
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 3,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "set_bar_color",
+    "index": 4,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 3
+  },
+  {
+    "action": "set_bar_color",
+    "index": 4,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "set_bar_color",
+    "index": 5,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "log",
+    "text": "Comparing arr[4]=50 and arr[5]=22"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 4
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 5
+  },
+  {
+    "action": "log",
+    "text": "Swapping  →  arr[4]=22, arr[5]=50"
+  },
+  {
+    "action": "swap",
+    "index1": 4,
+    "index2": 5
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 4,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "set_bar_color",
+    "index": 5,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 5,
+    "color": "var(--bar-sorted)"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 2
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 3
+  },
+  {
+    "action": "set_bar_color",
+    "index": 0,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "set_bar_color",
+    "index": 1,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "log",
+    "text": "Comparing arr[0]=12 and arr[1]=35"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 4
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 0,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "set_bar_color",
+    "index": 1,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 3
+  },
+  {
+    "action": "set_bar_color",
+    "index": 1,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "set_bar_color",
+    "index": 2,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "log",
+    "text": "Comparing arr[1]=35 and arr[2]=8"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 4
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 5
+  },
+  {
+    "action": "log",
+    "text": "Swapping  →  arr[1]=8, arr[2]=35"
+  },
+  {
+    "action": "swap",
+    "index1": 1,
+    "index2": 2
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 1,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "set_bar_color",
+    "index": 2,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 3
+  },
+  {
+    "action": "set_bar_color",
+    "index": 2,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "set_bar_color",
+    "index": 3,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "log",
+    "text": "Comparing arr[2]=35 and arr[3]=45"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 4
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 2,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "set_bar_color",
+    "index": 3,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 3
+  },
+  {
+    "action": "set_bar_color",
+    "index": 3,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "set_bar_color",
+    "index": 4,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "log",
+    "text": "Comparing arr[3]=45 and arr[4]=22"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 4
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 5
+  },
+  {
+    "action": "log",
+    "text": "Swapping  →  arr[3]=22, arr[4]=45"
+  },
+  {
+    "action": "swap",
+    "index1": 3,
+    "index2": 4
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 3,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "set_bar_color",
+    "index": 4,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 4,
+    "color": "var(--bar-sorted)"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 2
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 3
+  },
+  {
+    "action": "set_bar_color",
+    "index": 0,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "set_bar_color",
+    "index": 1,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "log",
+    "text": "Comparing arr[0]=12 and arr[1]=8"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 4
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 5
+  },
+  {
+    "action": "log",
+    "text": "Swapping  →  arr[0]=8, arr[1]=12"
+  },
+  {
+    "action": "swap",
+    "index1": 0,
+    "index2": 1
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 0,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "set_bar_color",
+    "index": 1,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 3
+  },
+  {
+    "action": "set_bar_color",
+    "index": 1,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "set_bar_color",
+    "index": 2,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "log",
+    "text": "Comparing arr[1]=12 and arr[2]=35"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 4
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 1,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "set_bar_color",
+    "index": 2,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 3
+  },
+  {
+    "action": "set_bar_color",
+    "index": 2,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "set_bar_color",
+    "index": 3,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "log",
+    "text": "Comparing arr[2]=35 and arr[3]=22"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 4
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 5
+  },
+  {
+    "action": "log",
+    "text": "Swapping  →  arr[2]=22, arr[3]=35"
+  },
+  {
+    "action": "swap",
+    "index1": 2,
+    "index2": 3
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 2,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "set_bar_color",
+    "index": 3,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 3,
+    "color": "var(--bar-sorted)"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 2
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 3
+  },
+  {
+    "action": "set_bar_color",
+    "index": 0,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "set_bar_color",
+    "index": 1,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "log",
+    "text": "Comparing arr[0]=8 and arr[1]=12"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 4
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 0,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "set_bar_color",
+    "index": 1,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 3
+  },
+  {
+    "action": "set_bar_color",
+    "index": 1,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "set_bar_color",
+    "index": 2,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "log",
+    "text": "Comparing arr[1]=12 and arr[2]=22"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 4
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 1,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "set_bar_color",
+    "index": 2,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 2,
+    "color": "var(--bar-sorted)"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 2
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 3
+  },
+  {
+    "action": "set_bar_color",
+    "index": 0,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "set_bar_color",
+    "index": 1,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "log",
+    "text": "Comparing arr[0]=8 and arr[1]=12"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 4
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 0,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "set_bar_color",
+    "index": 1,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 1,
+    "color": "var(--bar-sorted)"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 2
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 0,
+    "color": "var(--bar-sorted)"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 1
+  },
+  {
+    "action": "log",
+    "text": "Done. Sorted array: [8, 12, 22, 35, 45, 50]"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  }
+]
