@@ -1,0 +1,986 @@
+[
+  {
+    "action": "init_code",
+    "lines": [
+      "def selection_sort(arr):",
+      "    for i in range(len(arr)):",
+      "        min_idx = i",
+      "        for j in range(i+1, len(arr)):",
+      "            if arr[j] < arr[min_idx]:",
+      "                min_idx = j",
+      "        swap(arr, i, min_idx)"
+    ]
+  },
+  {
+    "action": "init_array",
+    "data": [
+      38,
+      14,
+      52,
+      7,
+      29,
+      41
+    ]
+  },
+  {
+    "action": "log",
+    "text": "Starting selection sort on [38, 14, 52, 7, 29, 41]"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 2
+  },
+  {
+    "action": "set_bar_color",
+    "index": 0,
+    "color": "#e5c07b"
+  },
+  {
+    "action": "log",
+    "text": "Pass 1: current minimum is arr[0]=38"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 4
+  },
+  {
+    "action": "set_bar_color",
+    "index": 1,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "log",
+    "text": "Comparing arr[1]=14 with current min arr[0]=38"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 5
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 0,
+    "color": "#e5c07b"
+  },
+  {
+    "action": "highlight_line",
+    "line": 6
+  },
+  {
+    "action": "set_bar_color",
+    "index": 1,
+    "color": "#e5c07b"
+  },
+  {
+    "action": "log",
+    "text": "New minimum found: arr[1]=14"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 4
+  },
+  {
+    "action": "set_bar_color",
+    "index": 2,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "log",
+    "text": "Comparing arr[2]=52 with current min arr[1]=14"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 5
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 2,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 4
+  },
+  {
+    "action": "set_bar_color",
+    "index": 3,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "log",
+    "text": "Comparing arr[3]=7 with current min arr[1]=14"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 5
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 1,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "highlight_line",
+    "line": 6
+  },
+  {
+    "action": "set_bar_color",
+    "index": 3,
+    "color": "#e5c07b"
+  },
+  {
+    "action": "log",
+    "text": "New minimum found: arr[3]=7"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 4
+  },
+  {
+    "action": "set_bar_color",
+    "index": 4,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "log",
+    "text": "Comparing arr[4]=29 with current min arr[3]=7"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 5
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 4,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 4
+  },
+  {
+    "action": "set_bar_color",
+    "index": 5,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "log",
+    "text": "Comparing arr[5]=41 with current min arr[3]=7"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 5
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 5,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 7
+  },
+  {
+    "action": "set_bar_color",
+    "index": 0,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "set_bar_color",
+    "index": 3,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "log",
+    "text": "Swapping arr[0]=38 with arr[3]=7"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "swap",
+    "index1": 0,
+    "index2": 3
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 0,
+    "color": "var(--bar-sorted)"
+  },
+  {
+    "action": "set_bar_color",
+    "index": 3,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "log",
+    "text": "arr[0]=7 is in its final position"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 2
+  },
+  {
+    "action": "set_bar_color",
+    "index": 1,
+    "color": "#e5c07b"
+  },
+  {
+    "action": "log",
+    "text": "Pass 2: current minimum is arr[1]=14"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 4
+  },
+  {
+    "action": "set_bar_color",
+    "index": 2,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "log",
+    "text": "Comparing arr[2]=52 with current min arr[1]=14"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 5
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 2,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 4
+  },
+  {
+    "action": "set_bar_color",
+    "index": 3,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "log",
+    "text": "Comparing arr[3]=38 with current min arr[1]=14"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 5
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 3,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 4
+  },
+  {
+    "action": "set_bar_color",
+    "index": 4,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "log",
+    "text": "Comparing arr[4]=29 with current min arr[1]=14"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 5
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 4,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 4
+  },
+  {
+    "action": "set_bar_color",
+    "index": 5,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "log",
+    "text": "Comparing arr[5]=41 with current min arr[1]=14"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 5
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 5,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 7
+  },
+  {
+    "action": "set_bar_color",
+    "index": 1,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "set_bar_color",
+    "index": 1,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "log",
+    "text": "Swapping arr[1]=14 with arr[1]=14"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 1,
+    "color": "var(--bar-sorted)"
+  },
+  {
+    "action": "log",
+    "text": "arr[1]=14 is already in its final position"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 2
+  },
+  {
+    "action": "set_bar_color",
+    "index": 2,
+    "color": "#e5c07b"
+  },
+  {
+    "action": "log",
+    "text": "Pass 3: current minimum is arr[2]=52"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 4
+  },
+  {
+    "action": "set_bar_color",
+    "index": 3,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "log",
+    "text": "Comparing arr[3]=38 with current min arr[2]=52"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 5
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 2,
+    "color": "#e5c07b"
+  },
+  {
+    "action": "highlight_line",
+    "line": 6
+  },
+  {
+    "action": "set_bar_color",
+    "index": 3,
+    "color": "#e5c07b"
+  },
+  {
+    "action": "log",
+    "text": "New minimum found: arr[3]=38"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 4
+  },
+  {
+    "action": "set_bar_color",
+    "index": 4,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "log",
+    "text": "Comparing arr[4]=29 with current min arr[3]=38"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 5
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 3,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "highlight_line",
+    "line": 6
+  },
+  {
+    "action": "set_bar_color",
+    "index": 4,
+    "color": "#e5c07b"
+  },
+  {
+    "action": "log",
+    "text": "New minimum found: arr[4]=29"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 4
+  },
+  {
+    "action": "set_bar_color",
+    "index": 5,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "log",
+    "text": "Comparing arr[5]=41 with current min arr[4]=29"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 5
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 5,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 7
+  },
+  {
+    "action": "set_bar_color",
+    "index": 2,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "set_bar_color",
+    "index": 4,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "log",
+    "text": "Swapping arr[2]=52 with arr[4]=29"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "swap",
+    "index1": 2,
+    "index2": 4
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 2,
+    "color": "var(--bar-sorted)"
+  },
+  {
+    "action": "set_bar_color",
+    "index": 4,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "log",
+    "text": "arr[2]=29 is in its final position"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 2
+  },
+  {
+    "action": "set_bar_color",
+    "index": 3,
+    "color": "#e5c07b"
+  },
+  {
+    "action": "log",
+    "text": "Pass 4: current minimum is arr[3]=38"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 4
+  },
+  {
+    "action": "set_bar_color",
+    "index": 4,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "log",
+    "text": "Comparing arr[4]=52 with current min arr[3]=38"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 5
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 4,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 4
+  },
+  {
+    "action": "set_bar_color",
+    "index": 5,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "log",
+    "text": "Comparing arr[5]=41 with current min arr[3]=38"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 5
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 5,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 7
+  },
+  {
+    "action": "set_bar_color",
+    "index": 3,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "set_bar_color",
+    "index": 3,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "log",
+    "text": "Swapping arr[3]=38 with arr[3]=38"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 3,
+    "color": "var(--bar-sorted)"
+  },
+  {
+    "action": "log",
+    "text": "arr[3]=38 is already in its final position"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 2
+  },
+  {
+    "action": "set_bar_color",
+    "index": 4,
+    "color": "#e5c07b"
+  },
+  {
+    "action": "log",
+    "text": "Pass 5: current minimum is arr[4]=52"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 4
+  },
+  {
+    "action": "set_bar_color",
+    "index": 5,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "log",
+    "text": "Comparing arr[5]=41 with current min arr[4]=52"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 5
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 4,
+    "color": "#e5c07b"
+  },
+  {
+    "action": "highlight_line",
+    "line": 6
+  },
+  {
+    "action": "set_bar_color",
+    "index": 5,
+    "color": "#e5c07b"
+  },
+  {
+    "action": "log",
+    "text": "New minimum found: arr[5]=41"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 7
+  },
+  {
+    "action": "set_bar_color",
+    "index": 4,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "set_bar_color",
+    "index": 5,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "log",
+    "text": "Swapping arr[4]=52 with arr[5]=41"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "swap",
+    "index1": 4,
+    "index2": 5
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 4,
+    "color": "var(--bar-sorted)"
+  },
+  {
+    "action": "set_bar_color",
+    "index": 5,
+    "color": "var(--bar-default)"
+  },
+  {
+    "action": "log",
+    "text": "arr[4]=41 is in its final position"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 2
+  },
+  {
+    "action": "set_bar_color",
+    "index": 5,
+    "color": "#e5c07b"
+  },
+  {
+    "action": "log",
+    "text": "Pass 6: current minimum is arr[5]=52"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 7
+  },
+  {
+    "action": "set_bar_color",
+    "index": 5,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "set_bar_color",
+    "index": 5,
+    "color": "var(--bar-active)"
+  },
+  {
+    "action": "log",
+    "text": "Swapping arr[5]=52 with arr[5]=52"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "set_bar_color",
+    "index": 5,
+    "color": "var(--bar-sorted)"
+  },
+  {
+    "action": "log",
+    "text": "arr[5]=52 is already in its final position"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  },
+  {
+    "action": "highlight_line",
+    "line": 2
+  },
+  {
+    "action": "log",
+    "text": "Done. Sorted array: [7, 14, 29, 38, 41, 52]"
+  },
+  {
+    "action": "pause",
+    "ms": 500
+  }
+]
